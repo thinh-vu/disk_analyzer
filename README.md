@@ -63,11 +63,17 @@ drive.mount('/content/drive')
 
 **Bước 4:** Quét toàn bộ ổ đĩa Google Drive của bạn:
 
+![run on colab](./assets/disk_analyzer_colab.png)
+
 ```bash
-!./disk_analyzer-linux-amd64 /content/drive/MyDrive
+./disk_analyzer-linux-amd64 /content/drive/MyDrive
 ```
 
-**Lợi ích:** Quét hàng trăm GB trên Google Drive chỉ trong vài giây! Bạn có thể xem thư mục nào đang chiếm nhiều chỗ nhất và xóa chúng đi.
+hoặc thay thế địa chỉ `/content/drive/MyDrive` bằng địa chỉ một thư mục cụ thể trong Drive bạn muốn phân tích chẳng hạn `/content/drive/MyDrive/Notion Research`
+
+![image](./assets/disk_analyzer_copy_path.png)
+
+**Lợi ích:** Quét hàng chục GB trên Google Drive chỉ trong vài giây! Bạn có thể xem thư mục nào đang chiếm nhiều chỗ nhất và xử lý chúng.
 
 ***
 
